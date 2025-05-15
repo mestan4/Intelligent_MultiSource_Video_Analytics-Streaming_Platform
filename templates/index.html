@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 80%;
+            max-width: 800px;
+            border: 5px solid #222;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎥 Live Camera Stream</h1>
+    <img src="{{ url_for('stream') }}" alt="Live Stream">
+    <div>
+        <button onclick="start()">Start Camera</button>
+        <button onclick="stop()">Stop Camera</button>
+    </div>
+
+    <script>
+        function start() {
+            fetch('/start', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => alert(data.status));
+        }
+
+        function stop() {
+            fetch('/stop', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => alert(data.status));
+        }
+    </script>
+</
+
