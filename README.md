@@ -19,12 +19,15 @@ git clone https://github.com/mestan4/Intelligent_MultiSource_Video_Analytics-Str
 cd Intelligent_MultiSource_Video_Analytics-Streaming_Platform
 
 2.Install dependencies:
-```bash pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 # or manually:
 ```bash pip install opencv-python flask ultralytics
 
 3.Run The Application
-```bash python3 app.py
+```bash
+python3 app.py
 
 4.open in browser
-```bash http://127.0.0.1:5000
+```bash
+http://127.0.0.1:5000
