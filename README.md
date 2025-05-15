@@ -18,17 +18,11 @@ This project is a real-time, AI-powered video analytics system that:
 git clone https://github.com/mestan4/Intelligent_MultiSource_Video_Analytics-Streaming_Platform.git
 cd Intelligent_MultiSource_Video_Analytics-Streaming_Platform
 
-2. **Install dependencies::**
-```bash
-pip install -r requirements.txt
+pip install -r requirements.txt //install dependencies
 # or manually:
-```bash
 pip install opencv-python flask ultralytics
 
-3.  **Run The Application:**
-```bash
-python3 app.py
 
-4. **open in browser:**
-```bash
-http://127.0.0.1:5000
+python3 app.py // Run the application
+
+http://127.0.0.1:5000   // Open in browser
