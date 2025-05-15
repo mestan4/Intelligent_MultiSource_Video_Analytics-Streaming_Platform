@@ -22,7 +22,8 @@ cd Intelligent_MultiSource_Video_Analytics-Streaming_Platform
 ```bash
 pip install -r requirements.txt
 # or manually:
-```bash pip install opencv-python flask ultralytics
+```bash
+pip install opencv-python flask ultralytics
 
 3.Run The Application
 ```bash
